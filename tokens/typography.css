@@ -1,0 +1,96 @@
+:root {
+  /* Type scale — size / weight / leading / tracking */
+  --mba-hero-size: 92px;
+  --mba-hero-weight: 300;
+  --mba-hero-leading: 1.0;
+  --mba-hero-tracking: -0.01em;
+
+  --mba-headline-size: 80px;
+  --mba-headline-size-sm: 72px;
+  --mba-headline-weight: 300;
+  --mba-headline-leading: 1.0;
+
+  --mba-card-headline-size: 54px;
+  --mba-card-headline-size-sm: 48px;
+  --mba-card-headline-weight: 300;
+  --mba-card-headline-leading: 1.05;
+
+  --mba-body-lg-size: 17px;
+  --mba-body-lg-weight: 300;
+  --mba-body-lg-leading: 1.75;
+
+  --mba-body-size: 15px;
+  --mba-body-weight: 400;
+  --mba-body-leading: 1.8;
+
+  --mba-small-size: 13px;
+  --mba-small-weight: 400;
+  --mba-small-tracking: 0.02em;
+
+  --mba-label-size: 10px;
+  --mba-label-weight: 500;
+  --mba-label-tracking: 0.24em;
+
+  /* Weights */
+  --mba-weight-body: 300;
+  --mba-weight-ui: 400;
+  --mba-weight-nav: 500;
+  --mba-weight-emphasis: 600;
+}
+
+.mba-hero {
+  font-family: var(--mba-font-display);
+  font-size: var(--mba-hero-size);
+  font-weight: var(--mba-hero-weight);
+  line-height: var(--mba-hero-leading);
+  letter-spacing: var(--mba-hero-tracking);
+}
+
+.mba-headline {
+  font-family: var(--mba-font-display);
+  font-size: var(--mba-headline-size);
+  font-weight: var(--mba-headline-weight);
+  line-height: var(--mba-headline-leading);
+}
+
+.mba-card-headline {
+  font-family: var(--mba-font-display);
+  font-size: var(--mba-card-headline-size);
+  font-weight: var(--mba-card-headline-weight);
+  line-height: var(--mba-card-headline-leading);
+}
+
+.mba-body-lg {
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-body-lg-size);
+  font-weight: var(--mba-body-lg-weight);
+  line-height: var(--mba-body-lg-leading);
+}
+
+.mba-body {
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-body-size);
+  font-weight: var(--mba-body-weight);
+  line-height: var(--mba-body-leading);
+}
+
+.mba-small {
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-small-size);
+  font-weight: var(--mba-small-weight);
+  letter-spacing: var(--mba-small-tracking);
+}
+
+.mba-eyebrow {
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-label-size);
+  font-weight: var(--mba-label-weight);
+  letter-spacing: var(--mba-label-tracking);
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .mba-hero { font-size: 52px; }
+  .mba-headline { font-size: 40px; }
+  .mba-card-headline { font-size: 32px; }
+}

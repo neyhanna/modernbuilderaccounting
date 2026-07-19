@@ -1,0 +1,36 @@
+:root {
+  /* Light / UI */
+  --mba-white: #FFFFFF;
+  --mba-bg-subtle: #F7F9FC;
+  --mba-border: #E4EAF3;
+  --mba-text-muted: #6B7280;
+  --mba-text-light: #9CA3AF;
+
+  /* Dark / Brand */
+  --mba-navy: #0B1F3A;
+  --mba-navy-dark: #0A1628;
+  --mba-navy-section: #0D1E38;
+  --mba-footer: #071020;
+  --mba-cream: #EDE8DC;
+
+  /* Accents */
+  --mba-blue: #1B67F2;
+  --mba-blue-accent: #4E9EFF;
+  --mba-blue-tint: #EEF4FF;
+  --mba-body-on-dark: #7A8FA8;
+
+  /* Footer fine print */
+  --mba-footer-fine: #3A5168;
+
+  /* Semantic aliases */
+  --mba-bg-primary: var(--mba-white);
+  --mba-bg-secondary: var(--mba-bg-subtle);
+  --mba-bg-dark: var(--mba-navy-dark);
+  --mba-bg-dark-section: var(--mba-navy-section);
+  --mba-bg-footer: var(--mba-footer);
+  --mba-text-primary: var(--mba-navy);
+  --mba-text-on-dark: var(--mba-cream);
+  --mba-text-body: var(--mba-text-muted);
+  --mba-link: var(--mba-blue);
+  --mba-link-on-dark: var(--mba-blue-accent);
+}

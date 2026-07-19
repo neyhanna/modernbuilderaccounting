@@ -1,0 +1,39 @@
+.mba-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-body-size);
+  font-weight: var(--mba-weight-nav);
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  white-space: nowrap;
+}
+
+.mba-btn:hover {
+  opacity: 0.85;
+}
+
+/* Primary — navy, for light-context sections */
+.mba-btn--primary {
+  background: var(--mba-navy);
+  color: var(--mba-cream);
+  border-radius: var(--mba-radius-default);
+}
+
+/* CTA — brand blue, for dark-context sections */
+.mba-btn--cta {
+  background: var(--mba-blue);
+  color: var(--mba-white);
+  border-radius: var(--mba-radius-cta-dark);
+}
+
+/* Secondary — outline, light context */
+.mba-btn--secondary {
+  background: transparent;
+  color: var(--mba-navy);
+  border: 1px solid var(--mba-border);
+  border-radius: var(--mba-radius-default);
+}

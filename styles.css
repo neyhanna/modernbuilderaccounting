@@ -1,0 +1,64 @@
+@import url('./tokens/fonts.css');
+@import url('./tokens/colors.css');
+@import url('./tokens/typography.css');
+@import url('./tokens/spacing.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--mba-bg-primary);
+  color: var(--mba-text-body);
+  font-family: var(--mba-font-body);
+}
+
+a {
+  color: var(--mba-link);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.mba-section {
+  padding-top: var(--mba-section-padding-y);
+  padding-bottom: var(--mba-section-padding-y);
+}
+
+.mba-section--light {
+  background: var(--mba-bg-primary);
+}
+
+.mba-section--subtle {
+  background: var(--mba-bg-secondary);
+}
+
+.mba-section--dark {
+  background: var(--mba-bg-dark);
+  color: var(--mba-text-on-dark);
+}
+
+.mba-section--dark-alt {
+  background: var(--mba-bg-dark-section);
+  color: var(--mba-text-on-dark);
+}
+
+.mba-container {
+  max-width: var(--mba-content-max-width);
+  margin: 0 auto;
+  padding-left: var(--mba-space-6);
+  padding-right: var(--mba-space-6);
+}
+
+.mba-container--narrow {
+  max-width: var(--mba-content-max-width-narrow);
+}

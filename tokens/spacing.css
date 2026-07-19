@@ -1,0 +1,25 @@
+:root {
+  /* 4px grid scale */
+  --mba-space-1: 4px;
+  --mba-space-2: 8px;
+  --mba-space-3: 12px;
+  --mba-space-4: 16px;
+  --mba-space-5: 20px;
+  --mba-space-6: 24px;
+  --mba-space-8: 32px;
+  --mba-space-10: 40px;
+  --mba-space-12: 48px;
+  --mba-space-16: 64px;
+  --mba-space-20: 80px;
+  --mba-space-24: 96px;
+  --mba-space-32: 128px;
+
+  /* Semantic layout tokens */
+  --mba-section-padding-y: var(--mba-space-24); /* 96px */
+  --mba-content-max-width: 1200px;
+  --mba-content-max-width-narrow: 1120px;
+  --mba-radius-default: 4px;
+  --mba-radius-cta-dark: 3px;
+  --mba-radius-pill: 100px;
+  --mba-border-width: 1px;
+}
