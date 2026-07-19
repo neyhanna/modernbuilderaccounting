@@ -1,0 +1,13 @@
+.mba-eyebrow {
+  font-family: var(--mba-font-body);
+  font-size: var(--mba-label-size);
+  font-weight: var(--mba-label-weight);
+  letter-spacing: var(--mba-label-tracking);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* On light backgrounds, sections default to brand blue; on dark, accent blue */
+.mba-eyebrow--light { color: var(--mba-blue); }
+.mba-eyebrow--dark { color: var(--mba-blue-accent); }
+.mba-eyebrow--muted { color: var(--mba-text-light); }

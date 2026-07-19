@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="stylesheet" href="./Button.css" />
+<link rel="stylesheet" href="./Badge.css" />
+<link rel="stylesheet" href="./Eyebrow.css" />
+<link rel="stylesheet" href="./Nav.css" />
+<link rel="stylesheet" href="./ServiceCard.css" />
+
+<div style="font-family: var(--mba-font-body);">
+  <nav class="mba-nav">
+    <a href="#" class="mba-nav__brand--text">Modern Builder Accounting</a>
+    <div class="mba-nav__links">
+      <a href="#" class="mba-nav__link mba-nav__link--active">Services</a>
+      <a href="#" class="mba-nav__link">Technology</a>
+      <a href="#" class="mba-nav__link">Team</a>
+      <a href="#" class="mba-nav__link">Contact</a>
+      <a href="#" class="mba-nav__cta">Schedule a call</a>
+    </div>
+  </nav>
+
+  <div style="padding: 32px 80px; background: var(--mba-white); display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+    <button class="mba-btn mba-btn--primary">Schedule a call</button>
+    <button class="mba-btn mba-btn--secondary">Learn more</button>
+    <span class="mba-badge"><span class="mba-badge__dot"></span><span class="mba-badge__label">Preferred Partner</span></span>
+    <span class="mba-badge mba-badge--solid"><span class="mba-badge__label">Most common</span></span>
+  </div>
+
+  <div class="mba-service-card mba-service-card--bordered" style="background: var(--mba-navy-dark); display: inline-block; width: 420px;">
+    <div class="mba-eyebrow mba-eyebrow--dark">01 / Bookkeeping</div>
+    <h2 class="mba-service-card__title">Monthly<br />Bookkeeping</h2>
+    <p class="mba-service-card__body">Ongoing financial management tailored to construction.</p>
+    <ul class="mba-service-card__list">
+      <li class="mba-service-card__list-item">Job costing &amp; WIP tracking</li>
+      <li class="mba-service-card__list-item">Draw &amp; lender reconciliation</li>
+    </ul>
+  </div>
+</div>

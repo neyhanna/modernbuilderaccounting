@@ -1,0 +1,379 @@
+@import url('../../styles.css');
+@import url('../../components/core/Button.css');
+
+/* ─── Layout helpers ─────────────────────────────────────────────────── */
+.mba-page { background: var(--mba-white); }
+.mba-pad-80 { padding: 80px; }
+
+/* ─── Nav ────────────────────────────────────────────────────────────── */
+.mba-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  height: 76px;
+  background: var(--mba-white);
+  border-bottom: 1px solid var(--mba-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.mba-nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.mba-nav__brand img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.mba-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mba-nav__link {
+  font-family: var(--mba-font-body);
+  font-size: 13px;
+  color: var(--mba-text-muted);
+  text-decoration: none;
+}
+
+.mba-nav__link--active {
+  color: var(--mba-navy);
+  font-weight: var(--mba-weight-nav);
+}
+
+.mba-nav__cta {
+  font-family: var(--mba-font-body);
+  font-size: 13px;
+  font-weight: var(--mba-weight-nav);
+  color: var(--mba-white);
+  background: var(--mba-navy);
+  padding: 10px 24px;
+  border-radius: var(--mba-radius-default);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Dotted hero backgrounds ────────────────────────────────────────── */
+.mba-hero--light {
+  background: var(--mba-white);
+  background-image: radial-gradient(rgba(27, 103, 242, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.mba-hero--dark {
+  background: var(--mba-navy-dark);
+  background-image: radial-gradient(rgba(78, 158, 255, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Badge pill ─────────────────────────────────────────────────────── */
+.mba-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--mba-blue-tint);
+  border-radius: var(--mba-radius-pill);
+  padding: 7px 18px;
+}
+
+.mba-badge__dot {
+  width: 7px;
+  height: 7px;
+  background: var(--mba-blue);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.mba-badge__label {
+  font-family: var(--mba-font-body);
+  font-size: 12px;
+  font-weight: var(--mba-weight-nav);
+  color: var(--mba-blue);
+}
+
+/* ─── Eyebrow ────────────────────────────────────────────────────────── */
+.mba-eyebrow--blue { color: var(--mba-blue); }
+.mba-eyebrow--accent { color: var(--mba-blue-accent); }
+.mba-eyebrow--muted { color: var(--mba-text-light); }
+
+/* ─── Works With strip ───────────────────────────────────────────────── */
+.mba-works-with {
+  background: var(--mba-bg-subtle);
+  padding: 52px 80px;
+  border-top: 1px solid var(--mba-border);
+  border-bottom: 1px solid var(--mba-border);
+  display: flex;
+  align-items: center;
+}
+
+.mba-works-with__intro {
+  flex-shrink: 0;
+  padding-right: 56px;
+  border-right: 1px solid var(--mba-border);
+  margin-right: 56px;
+}
+
+.mba-works-with__items {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.mba-works-with__divider {
+  width: 1px;
+  height: 36px;
+  background: var(--mba-border);
+  flex-shrink: 0;
+}
+
+.mba-works-with__item {
+  font-family: var(--mba-font-display);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--mba-text-muted);
+}
+
+.mba-works-with__item--featured {
+  font-weight: 400;
+  color: var(--mba-navy);
+}
+
+/* ─── Services split (dark 2-col) ────────────────────────────────────── */
+.mba-services-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--mba-navy-dark);
+}
+
+.mba-service-col {
+  padding: 80px;
+}
+
+.mba-service-col--bordered {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mba-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mba-feature-list__item {
+  font-family: var(--mba-font-body);
+  font-size: 14px;
+  color: var(--mba-body-on-dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.mba-feature-list__item::before {
+  content: "\2013";
+  color: var(--mba-blue-accent);
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ─── FAQ ────────────────────────────────────────────────────────────── */
+.mba-faq {
+  background: var(--mba-bg-subtle);
+  border-top: 1px solid var(--mba-border);
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+
+.mba-faq__item {
+  border-top: 1px solid var(--mba-border);
+  padding: 32px 0;
+}
+
+.mba-faq__item:last-child {
+  border-bottom: 1px solid var(--mba-border);
+}
+
+.mba-faq__q {
+  font-family: var(--mba-font-body);
+  font-size: 15px;
+  font-weight: var(--mba-weight-nav);
+  color: var(--mba-navy);
+  margin: 0 0 12px;
+}
+
+.mba-faq__a {
+  font-family: var(--mba-font-body);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--mba-text-muted);
+  margin: 0;
+}
+
+/* ─── CTA (dark) ─────────────────────────────────────────────────────── */
+.mba-cta {
+  padding: 100px 80px;
+  text-align: center;
+  background: var(--mba-navy-section);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────── */
+.mba-footer {
+  background: var(--mba-footer);
+  padding: 52px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.mba-footer__brand {
+  font-family: var(--mba-font-body);
+  font-size: 11px;
+  font-weight: var(--mba-weight-nav);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mba-cream);
+  text-decoration: none;
+}
+
+.mba-footer__fine {
+  font-family: var(--mba-font-body);
+  font-size: 12px;
+  color: #2A3D52;
+  margin-top: 8px;
+}
+
+.mba-footer__links {
+  display: flex;
+  gap: 36px;
+}
+
+.mba-footer__link {
+  font-family: var(--mba-font-body);
+  font-size: 13px;
+  color: var(--mba-footer-fine);
+  text-decoration: none;
+}
+
+.mba-footer__badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--mba-white);
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+
+.mba-footer__badge img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+/* ─── Process / numbered steps (dark 3-col) ─────────────────────────── */
+.mba-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.mba-step {
+  background: var(--mba-navy-section);
+  padding: 48px 40px;
+}
+
+.mba-step__number {
+  font-family: var(--mba-font-display);
+  font-size: 72px;
+  font-weight: 300;
+  color: rgba(78, 158, 255, 0.2);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.mba-step__title {
+  font-family: var(--mba-font-body);
+  font-size: 15px;
+  font-weight: var(--mba-weight-nav);
+  color: var(--mba-cream);
+  margin: 0 0 14px;
+  letter-spacing: 0.02em;
+}
+
+.mba-step__body {
+  font-family: var(--mba-font-body);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--mba-body-on-dark);
+  margin: 0;
+}
+
+/* ─── Team ───────────────────────────────────────────────────────────── */
+.mba-team-grid {
+  background: var(--mba-white);
+  padding: 80px 80px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.mba-team-member__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.mba-team-member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .mba-nav,
+  .mba-hero--light,
+  .mba-hero--dark,
+  .mba-works-with,
+  .mba-faq,
+  .mba-cta,
+  .mba-footer,
+  .mba-service-col,
+  .mba-team-grid,
+  .mba-pad-80 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .mba-services-split,
+  .mba-steps,
+  .mba-team-grid,
+  .mba-faq {
+    grid-template-columns: 1fr;
+  }
+
+  .mba-nav__links {
+    gap: 16px;
+  }
+}

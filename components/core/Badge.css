@@ -1,0 +1,42 @@
+.mba-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--mba-blue-tint);
+  border-radius: var(--mba-radius-pill);
+  padding: 7px 18px;
+}
+
+.mba-badge__dot {
+  width: 7px;
+  height: 7px;
+  background: var(--mba-blue);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.mba-badge__label {
+  font-family: var(--mba-font-body);
+  font-size: 12px;
+  font-weight: var(--mba-weight-nav);
+  color: var(--mba-blue);
+  letter-spacing: 0.02em;
+}
+
+/* "Most common" style solid pill variant, used inside dark comparison cards */
+.mba-badge--solid {
+  background: var(--mba-blue);
+  padding: 2px 10px;
+}
+
+.mba-badge--solid .mba-badge__label {
+  color: var(--mba-white);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.mba-badge--solid .mba-badge__dot {
+  display: none;
+}

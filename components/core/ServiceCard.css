@@ -1,0 +1,63 @@
+/* A ServiceCard is a slice of a dark section, not a bordered/shadowed card —
+   the dark background is the stage. Two live side by side in a 2-col grid
+   with a hairline divider, e.g. Home's Bookkeeping / Consulting split. */
+.mba-service-card {
+  padding: 80px;
+}
+
+.mba-service-card--bordered {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mba-service-card__eyebrow {
+  font-family: var(--mba-font-body);
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--mba-blue-accent);
+  margin-bottom: 20px;
+}
+
+.mba-service-card__title {
+  font-family: var(--mba-font-display);
+  font-size: 54px;
+  font-weight: 300;
+  color: var(--mba-cream);
+  margin: 0 0 24px;
+  line-height: 1.02;
+}
+
+.mba-service-card__body {
+  font-family: var(--mba-font-body);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--mba-body-on-dark);
+  margin: 0 0 36px;
+  max-width: 380px;
+}
+
+.mba-service-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mba-service-card__list-item {
+  font-family: var(--mba-font-body);
+  font-size: 14px;
+  color: var(--mba-body-on-dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.mba-service-card__list-item::before {
+  content: "\2013";
+  color: var(--mba-blue-accent);
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
